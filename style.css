@@ -9,6 +9,7 @@
   font-family: sans-serif, 'poppins';
   box-sizing: border-box;
 }
+
 a{
   text-decoration: none;
 }
@@ -42,11 +43,13 @@ a{
 .content .date{
   display: flex;
   flex-direction: row;
+  padding-bottom: 10px;
 }
 
 .content h1{
   font-size: 64px;
   font-weight: 500;
+  padding-bottom: 5px;
 }
 .content h1 span{
   font-size: 64px;
@@ -64,7 +67,7 @@ a{
   cursor: pointer;
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .content button img{
   width:15px;
