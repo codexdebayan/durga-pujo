@@ -4,6 +4,10 @@ var date = new Date().getDate();
 var month = new Date().getMonth();
 var year = new Date().getFullYear();
 
+// var date = 24;
+// var month = 10;
+// var year = 2023;
+
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = contdownDate - now;
@@ -29,4 +33,35 @@ var x = setInterval(function () {
   document.getElementById("date").innerHTML = date;
   document.getElementById("month").innerHTML = month;
   document.getElementById("year").innerHTML = year;
+
+  if (date == 19 && month == 10 && year == 2023) {
+    document.getElementById("one").innerHTML = "Maha ";
+    document.getElementById("two").innerHTML = "Panchami";
+    document.getElementById("three").innerHTML = "";
+  }
+  if (date == 20 && month == 10 && year == 2023) {
+    document.getElementById("one").innerHTML = "Maha ";
+    document.getElementById("two").innerHTML = "Sasti";
+    document.getElementById("three").innerHTML = "";
+  }
+  if (date == 21 && month == 10 && year == 2023) {
+    document.getElementById("one").innerHTML = "Maha ";
+    document.getElementById("two").innerHTML = "Saptami";
+    document.getElementById("three").innerHTML = "";
+  }
+  if (date == 22 && month == 10 && year == 2023) {
+    document.getElementById("one").innerHTML = "Maha ";
+    document.getElementById("two").innerHTML = "Astami";
+    document.getElementById("three").innerHTML = "";
+  }
+  if (date == 23 && month == 10 && year == 2023) {
+    document.getElementById("one").innerHTML = "Maha ";
+    document.getElementById("two").innerHTML = "Novomi";
+    document.getElementById("three").innerHTML = "";
+  }
+  if (date == 24 && month == 10 && year == 2023) {
+    document.getElementById("one").innerHTML = "Maha ";
+    document.getElementById("two").innerHTML = "Doshomi";
+    document.getElementById("three").innerHTML = "";
+  }
 }, 1000);

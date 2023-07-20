@@ -1,22 +1,21 @@
-:root{
+:root {
   --text-color: #fff;
   --primary-color: #ff3753;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif, 'poppins';
+  font-family: sans-serif, "poppins";
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-
-.container{
-  width: 100vW;
+.container {
+  width: 100vw;
   height: 100vh;
   background-image: url(images/background-1.jpg);
   background-position: center;
@@ -24,45 +23,50 @@ a{
   padding: 0 8%;
   position: relative;
 }
-.logo{
-  padding: 20px 0 ;
+.logo {
+  padding: 20px 0;
   cursor: pointer;
   color: var(--text-color);
 }
 
-.logo span{
+.logo span {
   color: var(--primary-color);
 }
 
-.content{
-  top:50%;
+.content {
+  top: 50%;
   position: absolute;
   transform: translateY(-50%);
   color: var(--text-color);
 }
-.content .date{
+.content .date {
   display: flex;
   flex-direction: row;
   padding-bottom: 10px;
   font-size: 20px;
 }
 
-#days{
+#days {
   color: var(--primary-color);
 }
 
-.content h1{
+.heading h1 {
   font-size: 64px;
   font-weight: 500;
   padding-bottom: 5px;
 }
-.content h1 span{
+
+.heading {
+  display: flex;
+  flex-direction: row;
+}
+.heading .special {
   font-size: 64px;
   font-weight: 500;
   color: var(--primary-color);
 }
 
-.content button{
+.content button {
   background: transparent;
   border: 2px solid var(--text-color);
   color: var(--text-color);
@@ -74,31 +78,28 @@ a{
   align-items: center;
   margin-top: 30px;
   font-size: 18px;
-    
 }
-.content button img{
-  width:15px;
+.content button img {
+  width: 15px;
   margin-left: 10px;
 }
 
-.launch-time{
+.launch-time {
   display: flex;
-  
 }
-.launch-time div{
+.launch-time div {
   flex-basis: 80px;
-  
-} 
-.launch-time p{
+}
+.launch-time p {
   font-size: 60px;
   flex-basis: 30px;
 }
-.launch-time div p{ 
+.launch-time div p {
   font-size: 60px;
-  margin-bottom: -5px;  
+  margin-bottom: -5px;
 }
 
-.rocket{
+.rocket {
   width: 250px;
   position: absolute;
   right: 10%;
@@ -107,18 +108,18 @@ a{
 }
 
 @keyframes rocket {
-  0%{
+  0% {
     bottom: 0;
     opacity: 0;
   }
-  100%{
+  100% {
     bottom: 105%;
     opacity: 1;
   }
 }
 /* for tablet screen */
-@media only screen and (max-width:768px) {
-  .rocket{
+@media only screen and (max-width: 768px) {
+  .rocket {
     width: 150px;
     position: absolute;
     right: 10%;
@@ -127,8 +128,8 @@ a{
   }
 }
 /* for tablet screen */
-@media only screen and (max-width:700px) {
-  .rocket{
+@media only screen and (max-width: 700px) {
+  .rocket {
     width: 100px;
     position: absolute;
     right: 10%;
@@ -138,26 +139,25 @@ a{
 }
 
 /* for moblie screen */
-@media only screen and (max-width:600px) {
-  .rocket{
+@media only screen and (max-width: 600px) {
+  .rocket {
     display: none;
   }
-  .content h1{
+
+  .heading h1 {
     font-size: 40px;
     font-weight: 500;
     padding-bottom: 5px;
   }
-  .content h1 span{
+  .heading .special {
     font-size: 40px;
     font-weight: 500;
     color: var(--primary-color);
   }
-  .content .date{
+  .content .date {
     display: flex;
     flex-direction: row;
     padding-bottom: 10px;
     font-size: larger;
   }
-
-  
 }
