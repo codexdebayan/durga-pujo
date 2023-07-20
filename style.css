@@ -47,6 +47,10 @@ a{
   font-size: 20px;
 }
 
+#days{
+  color: var(--primary-color);
+}
+
 .content h1{
   font-size: 64px;
   font-weight: 500;
