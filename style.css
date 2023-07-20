@@ -44,6 +44,7 @@ a{
   display: flex;
   flex-direction: row;
   padding-bottom: 10px;
+  font-size: 20px;
 }
 
 .content h1{
@@ -68,6 +69,8 @@ a{
   display: flex;
   align-items: center;
   margin-top: 30px;
+  font-size: 18px;
+    
 }
 .content button img{
   width:15px;
@@ -108,4 +111,49 @@ a{
     bottom: 105%;
     opacity: 1;
   }
+}
+/* for tablet screen */
+@media only screen and (max-width:768px) {
+  .rocket{
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+  }
+}
+/* for tablet screen */
+@media only screen and (max-width:700px) {
+  .rocket{
+    width: 100px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+  }
+}
+
+/* for moblie screen */
+@media only screen and (max-width:600px) {
+  .rocket{
+    display: none;
+  }
+  .content h1{
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 5px;
+  }
+  .content h1 span{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  .content .date{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    font-size: larger;
+  }
+
+  
 }
