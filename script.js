@@ -65,3 +65,16 @@ var x = setInterval(function () {
     document.getElementById("three").innerHTML = "";
   }
 }, 1000);
+
+
+//doc title
+
+let docTitle = "Durga-pujo-2023"
+
+window.addEventListener("focus" , () =>{
+  document.title = docTitle;
+});
+
+window.addEventListener("blur" , () =>{
+  document.title = "Maa aschen :-)";
+});

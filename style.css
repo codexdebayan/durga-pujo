@@ -8,6 +8,8 @@
   padding: 0;
   font-family: sans-serif, "poppins";
   box-sizing: border-box;
+
+
 }
 
 a {
@@ -73,7 +75,7 @@ a {
   padding: 12px 25px;
   outline: none;
   border-radius: 35px 35px 0 35px;
-  cursor: pointer;
+  cursor:cell;
   display: flex;
   align-items: center;
   margin-top: 30px;
