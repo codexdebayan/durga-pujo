@@ -29,6 +29,22 @@ a {
   color: var(--text-color);
 }
 
+.logo::after{
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100px;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+
+}
+
+.logo:hover::after{
+  transform: scaleX(1);
+}
+
 .logo span {
   color: var(--primary-color);
 }
@@ -73,7 +89,7 @@ a {
   padding: 12px 25px;
   outline: none;
   border-radius: 35px 35px 0 35px;
-  cursor:cell;
+  cursor: pointer;
   display: flex;
   align-items: center;
   margin-top: 30px;

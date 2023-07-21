@@ -76,5 +76,5 @@ window.addEventListener("focus" , () =>{
 });
 
 window.addEventListener("blur" , () =>{
-  document.title = "Maa aschen :-)";
+  document.title = "Maa aschen 😊";
 });
