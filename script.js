@@ -4,6 +4,8 @@ var date = new Date().getDate();
 var month = new Date().getMonth();
 var year = new Date().getFullYear();
 
+
+
 // var date = 24;
 // var month = 10;
 // var year = 2023;
@@ -34,6 +36,12 @@ var x = setInterval(function () {
   document.getElementById("month").innerHTML = month;
   document.getElementById("year").innerHTML = year;
 
+
+  if (date == 14 && month == 10 && year == 2023) {
+    document.getElementById("one").innerHTML = "Subho ";
+    document.getElementById("two").innerHTML = "Mahalaya";
+    document.getElementById("three").innerHTML = "";
+  }
   if (date == 19 && month == 10 && year == 2023) {
     document.getElementById("one").innerHTML = "Maha ";
     document.getElementById("two").innerHTML = "Panchami";
@@ -64,6 +72,37 @@ var x = setInterval(function () {
     document.getElementById("two").innerHTML = "Doshomi";
     document.getElementById("three").innerHTML = "";
   }
+
+  
+function showTime(){
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s + " " + session;
+  // document.getElementById("MyClockDisplay").innerText = time;
+  document.getElementById("MyClockDisplay").textContent = time;
+  
+  setTimeout(showTime, 1000);
+  
+}
+
+showTime();
 }, 1000);
 
 
