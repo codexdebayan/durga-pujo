@@ -3,7 +3,7 @@ var contdownDate = new Date("Oct 19, 2023 00:00:00").getTime();
 var date = new Date().getDate();
 var month = new Date().getMonth();
 var year = new Date().getFullYear();
-
+month = month + 1;
 
 
 // var date = 24;
