@@ -1,4 +1,4 @@
-var contdownDate = new Date("Oct 19, 2023 00:00:00").getTime();
+var contdownDate = new Date("Oct 13, 2024 00:00:00").getTime();
 
 var date = new Date().getDate();
 var month = new Date().getMonth();
@@ -8,7 +8,7 @@ month = month + 1;
 
 // var date = 24;
 // var month = 10;
-// var year = 2023;
+// var year = 2024;
 
 var x = setInterval(function () {
   var now = new Date().getTime();
@@ -37,37 +37,37 @@ var x = setInterval(function () {
   document.getElementById("year").innerHTML = year;
 
 
-  if (date == 14 && month == 10 && year == 2023) {
+  if (date == 2 && month == 10 && year == 2024) {
     document.getElementById("one").innerHTML = "Subho ";
     document.getElementById("two").innerHTML = "Mahalaya";
     document.getElementById("three").innerHTML = "";
   }
-  if (date == 19 && month == 10 && year == 2023) {
+  if (date == 8 && month == 10 && year == 2024) {
     document.getElementById("one").innerHTML = "Maha ";
     document.getElementById("two").innerHTML = "Panchami";
     document.getElementById("three").innerHTML = "";
   }
-  if (date == 20 && month == 10 && year == 2023) {
+  if (date == 9 && month == 10 && year == 2024) {
     document.getElementById("one").innerHTML = "Maha ";
     document.getElementById("two").innerHTML = "Sasti";
     document.getElementById("three").innerHTML = "";
   }
-  if (date == 21 && month == 10 && year == 2023) {
+  if (date == 10 && month == 10 && year == 2024) {
     document.getElementById("one").innerHTML = "Maha ";
     document.getElementById("two").innerHTML = "Saptami";
     document.getElementById("three").innerHTML = "";
   }
-  if (date == 22 && month == 10 && year == 2023) {
+  if (date == 11 && month == 10 && year == 2024) {
     document.getElementById("one").innerHTML = "Maha ";
     document.getElementById("two").innerHTML = "Astami";
     document.getElementById("three").innerHTML = "";
   }
-  if (date == 23 && month == 10 && year == 2023) {
+  if (date == 12 && month == 10 && year == 2024) {
     document.getElementById("one").innerHTML = "Maha ";
     document.getElementById("two").innerHTML = "Novomi";
     document.getElementById("three").innerHTML = "";
   }
-  if (date == 24 && month == 10 && year == 2023) {
+  if (date == 13 && month == 10 && year == 2024) {
     document.getElementById("one").innerHTML = "Maha ";
     document.getElementById("two").innerHTML = "Doshomi";
     document.getElementById("three").innerHTML = "";
@@ -108,7 +108,7 @@ showTime();
 
 //doc title
 
-let docTitle = "Durga-pujo-2023"
+let docTitle = "Durga-pujo-2024"
 
 window.addEventListener("focus" , () =>{
   document.title = docTitle;
